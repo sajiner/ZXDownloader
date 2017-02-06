@@ -13,6 +13,10 @@
 		AE5BA16D1E48480C00A44718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5BA16B1E48480C00A44718 /* Main.storyboard */; };
 		AE5BA16F1E48480C00A44718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5BA16E1E48480C00A44718 /* Assets.xcassets */; };
 		AE5BA1721E48480C00A44718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5BA1701E48480C00A44718 /* LaunchScreen.storyboard */; };
+		AE5BA1821E4848C900A44718 /* NSString+ZXMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5BA17B1E4848C900A44718 /* NSString+ZXMD5.m */; };
+		AE5BA1831E4848C900A44718 /* ZXDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5BA17D1E4848C900A44718 /* ZXDownloader.m */; };
+		AE5BA1841E4848C900A44718 /* ZXDownloaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5BA17F1E4848C900A44718 /* ZXDownloaderManager.m */; };
+		AE5BA1851E4848C900A44718 /* ZXFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5BA1811E4848C900A44718 /* ZXFileTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		AE5BA16E1E48480C00A44718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE5BA1711E48480C00A44718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE5BA1731E48480C00A44718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE5BA17A1E4848C900A44718 /* NSString+ZXMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXMD5.h"; sourceTree = "<group>"; };
+		AE5BA17B1E4848C900A44718 /* NSString+ZXMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXMD5.m"; sourceTree = "<group>"; };
+		AE5BA17C1E4848C900A44718 /* ZXDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXDownloader.h; sourceTree = "<group>"; };
+		AE5BA17D1E4848C900A44718 /* ZXDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXDownloader.m; sourceTree = "<group>"; };
+		AE5BA17E1E4848C900A44718 /* ZXDownloaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXDownloaderManager.h; sourceTree = "<group>"; };
+		AE5BA17F1E4848C900A44718 /* ZXDownloaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXDownloaderManager.m; sourceTree = "<group>"; };
+		AE5BA1801E4848C900A44718 /* ZXFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXFileTool.h; sourceTree = "<group>"; };
+		AE5BA1811E4848C900A44718 /* ZXFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXFileTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 		AE5BA1611E48480C00A44718 /* ZXDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				AE5BA1791E4848C900A44718 /* Downloader */,
 				AE5BA1651E48480C00A44718 /* AppDelegate.h */,
 				AE5BA1661E48480C00A44718 /* AppDelegate.m */,
 				AE5BA1681E48480C00A44718 /* ViewController.h */,
@@ -77,6 +90,21 @@
 				AE5BA1631E48480C00A44718 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE5BA1791E4848C900A44718 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				AE5BA17A1E4848C900A44718 /* NSString+ZXMD5.h */,
+				AE5BA17B1E4848C900A44718 /* NSString+ZXMD5.m */,
+				AE5BA17C1E4848C900A44718 /* ZXDownloader.h */,
+				AE5BA17D1E4848C900A44718 /* ZXDownloader.m */,
+				AE5BA17E1E4848C900A44718 /* ZXDownloaderManager.h */,
+				AE5BA17F1E4848C900A44718 /* ZXDownloaderManager.m */,
+				AE5BA1801E4848C900A44718 /* ZXFileTool.h */,
+				AE5BA1811E4848C900A44718 /* ZXFileTool.m */,
+			);
+			path = Downloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5BA1851E4848C900A44718 /* ZXFileTool.m in Sources */,
+				AE5BA1841E4848C900A44718 /* ZXDownloaderManager.m in Sources */,
 				AE5BA16A1E48480C00A44718 /* ViewController.m in Sources */,
 				AE5BA1671E48480C00A44718 /* AppDelegate.m in Sources */,
+				AE5BA1831E4848C900A44718 /* ZXDownloader.m in Sources */,
+				AE5BA1821E4848C900A44718 /* NSString+ZXMD5.m in Sources */,
 				AE5BA1641E48480C00A44718 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +341,7 @@
 				AE5BA1781E48480C00A44718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
